@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Educacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium">Educacion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-toolbar style="align-items: center;">
+    <div id="video">
+      <iframe id="video" width="420" height="200" src="https://www.youtube.com/embed/uPdyOZeGmJA?si=nTUtEVkQotqkF6dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </ion-toolbar>
+  
+
+  <div>
+    <p style="text-align: justify; margin: 1rem;">
+      Sabemos lo importante que es tu bicicleta, y por eso queremos tratarla como se debe, para eso equipamos nuestra app con herramientas de la mejor calidad y contamos con mecánicos especializados que atenderán el mantenimiento de tu bicicleta y cualquier requerimiento que tengas.<br><br>
+      Contamos con servicio de taller para bicicletas, realizamos además alistamiento y mantenimiento de bicicletas en Bogotá y Medellín.
+    </p>
+  </div>
+
+  <ion-toolbar>
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Introducción</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo exercitationem deserunt sequi corrupti quae, aut ad, mollitia quo pariatur iure! Cum, tempora pariatur. Tempora quisquam tenetur ducimus voluptatem dolorem.</div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>Mantenimiento de cambios</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ab quam perferendis nisi debitis quis atque corrupti. Deleniti praesentium vel fugit magnam, consequatur eos sunt dolor aliquam cum ducimus ex!</div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>Mantenimiento de frenos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga facilis, mollitia dignissimos vel est adipisci vero consequuntur veniam. Recusandae, obcaecati excepturi eligendi quia consectetur at est neque et qui?</div>
+      </ion-accordion>
+      <ion-accordion value="fourth">
+        <ion-item slot="header" color="light">
+          <ion-label>Mantenimiento de platos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga facilis, mollitia dignissimos vel est adipisci vero consequuntur veniam. Recusandae, obcaecati excepturi eligendi quia consectetur at est neque et qui?</div>
+      </ion-accordion>
+      <ion-accordion value="five">
+        <ion-item slot="header" color="light">
+          <ion-label>Mantenimiento de ruedas</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga facilis, mollitia dignissimos vel est adipisci vero consequuntur veniam. Recusandae, obcaecati excepturi eligendi quia consectetur at est neque et qui?</div>
+      </ion-accordion>
+      <ion-accordion value="six">
+        <ion-item slot="header" color="light">
+          <ion-label>Recomendaciones</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga facilis, mollitia dignissimos vel est adipisci vero consequuntur veniam. Recusandae, obcaecati excepturi eligendi quia consectetur at est neque et qui?</div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-toolbar>
+  
+  <ion-tabs> 
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/menu']" tab="cerrarSesion">
+        <ion-icon name="arrow-back-circle"></ion-icon>
+        Atrás
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/acceso']" tab="cerrarSesion">
+        <ion-icon name="exit"></ion-icon>
+        Cerrar sesión
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
